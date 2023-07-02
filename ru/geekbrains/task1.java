@@ -24,6 +24,7 @@ public class task1 {
         Scanner scanner = new Scanner(System.in);
         // для прочитки данных Scanner scanner = new Scanner из консоли (System.in)
         int num = scanner.nextInt(); // для предачи данных в переменную num
+        scanner.close();
         int n = num;
         int n1 = num - 1;
         while (n1 > 0){
