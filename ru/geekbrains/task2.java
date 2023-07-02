@@ -6,6 +6,7 @@ public class task2 {
     }
     static void task2_1(){
         int num = 1;
+        int flag = 0;
         while (num <= 1000){
             int count = 0;
             for (int i = 1; i <= num; i++){
@@ -14,10 +15,15 @@ public class task2 {
                 }
             }
             if (count == 2){
-                System.out.println(num);
+                System.out.print(num +" ");
+                flag++;
+                if (flag == 30){
+                    System.out.println(" ");
+                    flag = 0;
+                }
             }
             else if (num == 1) {
-                System.out.println(num);
+                System.out.print(num + " ");
             }
             num++;
         }
