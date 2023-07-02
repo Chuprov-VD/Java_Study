@@ -31,26 +31,26 @@ public class task3 {
     }
     static void Multiplication(int x, int y){
         int result = x * y;
-        System.out.println(x +" * " + y + " = " + result);
+        System.out.printf("%d * %d = %d \n", x, y, result);
 
     }
     static void Complex(int x, int y){
         int result = x + y;
-        System.out.println(x +" + " + y + " = " + result);
+        System.out.printf("%d + %d = %d \n", x, y, result);;
 
     }
     static void Subtraction(int x, int y){
         int result1 = x - y;
         int result2 = y - x;
-        System.out.println(x +" - " + y + " = " + result1);
-        System.out.println(y +" - " + x + " = " + result2);
+        System.out.printf("%d - %d = %d \n", x, y, result1);
+        System.out.printf("%d - %d = %d \n", y, x, result2);
 
     }
     static double Division(double x, double y) {
         double result1 = x / y;
-        System.out.println(x +" / " + y + " = " + result1);
+        System.out.printf("%.1f / %.1f = %.1f \n", x, y, result1);
         double result2 = y / x;
-        System.out.println(y +" / " + x + " = " + result2);
+        System.out.printf("%.1f / %.1f = %.1f \n", y, x, result2);
 
         return result1;
     }
