@@ -11,18 +11,18 @@ public class Seminar2Task1 {
 
     }
     static void Str (int n, char c1, char c2){  // функция для проверки условия задачи и вывода ее на экран
-        String text = "";
+        StringBuilder StringText = new StringBuilder(""); // используем StringBuilder для добавления символов
         if (n % 2 == 0){
             for (int i = 1; i <= n; i++){
                 if (i % 2 != 0){
-                    text = text + c1;
+                    StringText.append(c1);
                 }
                 else{
-                    text = text + c2;
+                    StringText.append(c2);
                 }
             }
         }
-        System.out.println(text);
+        System.out.println(StringText);
     }
     static int Input(){     // Функция для ввода числа
         System.out.print("Введите число: ");
