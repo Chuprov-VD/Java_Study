@@ -21,8 +21,12 @@ public class Seminar2Task1 {
                     StringText.append(c2);
                 }
             }
+            System.out.println(StringText);
         }
-        System.out.println(StringText);
+        else {
+            System.out.println("Вы ввели нечетное число! " );
+        }
+
     }
     static int Input(){     // Функция для ввода числа
         System.out.print("Введите число: ");
